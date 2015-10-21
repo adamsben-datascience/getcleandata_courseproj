@@ -22,32 +22,20 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ## The data
 
 The dataset includes the following files:
-
-- 'README.txt'
-
-- 'features_info.txt': Shows information about the variables used on the feature vector.
-
-- 'features.txt': List of all features.
-
-- 'activity_labels.txt': Links the class labels with their activity name.
-
-- 'train/X_train.txt': Training set.
-
-- 'train/y_train.txt': Training labels.
-
-- 'test/X_test.txt': Test set.
-
-- 'test/y_test.txt': Test labels.
+* 'README.txt'
+* 'features_info.txt': Shows information about the variables used on the feature vector.
+* 'features.txt': List of all features.
+* 'activity_labels.txt': Links the class labels with their activity name.
+* 'train/X_train.txt': Training set.
+* 'train/y_train.txt': Training labels.
+* 'test/X_test.txt': Test set.
+* 'test/y_test.txt': Test labels.
 
 The following files are available for the train and test data. Their descriptions are equivalent.
-
-- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-
-- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
-
-- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
-
-- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
+* 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+* 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
+* 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
+* 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
 Here's how it all fits together:
 ![data structure](data_structure.png)
@@ -63,13 +51,13 @@ There are 5 parts:
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## How ```run_analysis.R``` implements the above steps:
-*step first: cleanup
-*step 2: require!! (some packages)
-*step 3: read in the data
-*step 4: unite!!  (the files into one data frame/table)
-*step 5: subset! (only the bits we want)
-*step 6: cleanup. (again)  (make better variable names)
-*step 7: TIDY!!
-*step the last: write it out (the data)
+* step first: cleanup
+* step 2: require!! (some packages)
+* step 3: read in the data
+* step 4: unite!!  (the files into one data frame/table)
+* step 5: subset! (only the bits we want)
+* step 6: cleanup. (again)  (make better variable names)
+* step 7: TIDY!!
+* step the last: write it out (the data)
 
 see run_analysis.R for detailed steps.
