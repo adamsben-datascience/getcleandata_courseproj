@@ -16,6 +16,8 @@ It is assumed for this project the data files are downloaded already.
 The download is a .ZIP file.  My code assumes the .ZIP is unpacked into a sub-folder
 called "data" and the structure of the .ZIP is intact (with a directory called "UCI_HAR_Dataset")
 
+There is a cookbook.  It explains the data and the structure, along with all the variables.
+
 ## Fitting it all together
 Once the data files are unpacked into a "data" directory, all you need to do to get this to
 run:
